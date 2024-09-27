@@ -9,7 +9,7 @@ const UseAxios = (endpoint, options) => {
     const fetchData = async () => {
             try {
                 setLoading(true);
-                const response = await axios(`https://events-registration-server-p0oa0vt0s-vlads-projects-d23fb6e2.vercel.app/${endpoint}`, options);
+                const response = await axios(`https://events-registrations-server.vercel.app/${endpoint}`, options);
                 setData(response.data);
             } catch (error) {
                 setError(error.message)

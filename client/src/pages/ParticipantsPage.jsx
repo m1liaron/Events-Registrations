@@ -44,7 +44,7 @@ const ParticipantsPage = () => {
 
     const searchParticipants = async () => {
         try {
-            const response = await axios.get(`https://events-registration-server-p0oa0vt0s-vlads-projects-d23fb6e2.vercel.app/participants/${id}/search?name=${search.fullName}&email=${search.email}`);
+            const response = await axios.get(`https://events-registrations-server.vercel.app/participants/${id}/search?name=${search.fullName}&email=${search.email}`);
             setParticipants(response.data.participants);
         } catch (error) {
             console.error(error.message);
