@@ -15,6 +15,6 @@ const apiLimiter = rateLimiter({
 const {getParticipants, registerOnEvent, searchParticipants} = require('../controllers/participant')
 
 router.route('/:id', apiLimiter).get(getParticipants).post(registerOnEvent)
-router.get('/:id/search', apiLimiter,searchParticipants)
+router.get('/:id/search',searchParticipants)
 
 module.exports = router;

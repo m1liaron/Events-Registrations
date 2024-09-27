@@ -8,7 +8,6 @@ const start = async () => {
     try {
         await connectDB(envVariables.MONGO_URI);
         await Event.create(events_data);
-        console.log('Success !!!');
         process.exit(0);
     } catch (error) {
         console.log(error);

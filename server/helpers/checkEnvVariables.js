@@ -11,7 +11,6 @@ const checkEnvVariables = () => {
         process.exit(1);
     }
 
-    console.log(missingVars)
     return missingVars;
 }
 
