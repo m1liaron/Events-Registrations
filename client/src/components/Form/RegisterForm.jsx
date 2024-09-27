@@ -27,6 +27,7 @@ const RegisterForm = () => {
             .then((response) => {
                 console.log(response)
                 navigate(-1)
+
             }).catch((error) => {
                 console.error(error)
          })
